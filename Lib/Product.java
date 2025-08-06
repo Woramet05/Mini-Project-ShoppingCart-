@@ -19,13 +19,13 @@ public final class Product {
     //ตรวจสอบ Rep Invarian เป็นจริงหรือไม่
     private void CheckRep(){
         if (productID == null || productID.isBlank()) {
-            throw new RuntimeException("");
+            throw new RuntimeException("RI violated : ProductID can not to be null or blank");
         }
         if (productName == null || productID.isBlank()) {
-            throw new RuntimeException("");
+            throw new RuntimeException("RI violated : ProductName can not to be null or blank");
         }
         if (productPrice < 0) {
-            throw new RuntimeException("");
+            throw new RuntimeException("RI violated : ProductPrice can not to be negative");
         }
     }
     /**

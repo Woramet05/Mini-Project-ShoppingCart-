@@ -14,7 +14,7 @@ public class ProductCatalog {
 
     private void CheckRep(){
         if (products == null) {
-            throw new RuntimeException("RI violated : Products can not to be blank");
+            throw new RuntimeException("RI violated : Products can not to be null");
         }
         //Check for duplicate products
         for (int i = 0 ; i < products.size() ; i++){
@@ -42,7 +42,7 @@ public class ProductCatalog {
     }
 
     /**
-     * ค้าหาสินค้าจากรหัสสินค้า
+     * ค้นหาสินค้าจากรหัสสินค้า
      * @param productID รหัสสินค้าที่ต้องการค้นหา
      * @return อ็อบเจกต์ Product หากพบ, หรือ null หากไม่พบ
      */

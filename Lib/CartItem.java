@@ -20,10 +20,10 @@ public class CartItem {
      */
     private void CheckRep(){
         if (product == null) {
-            throw new RuntimeException("");
+            throw new RuntimeException("RI violated: productId cannot be null.");
         }
         if (quantity <= 0) {
-            throw new RuntimeException("");
+            throw new RuntimeException("RI violated: quantity must be greater than 0.");
         }
     }
 
